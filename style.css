@@ -1,0 +1,20 @@
+body{
+    background-color:rgb(224, 215, 80);
+    color: #000;
+
+}
+h1{
+    color: #ff0000;
+}
+.img-pizza{
+    width: 160px;
+}
+.img-cheese{
+    width: 160px;
+}
+.img-peperoni{
+    width: 160px;
+}
+.img-deluxe{
+    width: 160px;
+}
