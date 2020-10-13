@@ -1,20 +1,14 @@
 body{
-    background-color:rgb(224, 215, 80);
     color: #000;
-
+    background-image: url("Img/Pizzaria.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
 }
-h1{
+h1,h2{
+    text-align: center;
     color: #ff0000;
+    font-size: 300%;
 }
 .img-pizza{
-    width: 160px;
-}
-.img-cheese{
-    width: 160px;
-}
-.img-peperoni{
-    width: 160px;
-}
-.img-deluxe{
     width: 160px;
 }
