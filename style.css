@@ -12,6 +12,35 @@ h1,h2{
 h2{
     color: #0000ff;
 }
+a:hover {
+    color: #fff;
+}
+a:active {
+    color: #ffff00;
+}
+a:link {
+    background-color: #000; 
+}
+a:visited {
+    color: #ff0000;
+}
 .img-pizza{
     width: 160px;
 }
+/* descendant selector */
+article div {
+    color: red;
+}
+ /* child selector */
+article > div {
+    color: yellow;
+}
+/* adjacent sibling selector */
+section + div {
+    text-align: center;
+    font: bold 30px helvetica;
+    text-shadow: 5px 5px 10px orange,
+                 10px 10px 20px blue;
+                   
+}
+
