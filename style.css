@@ -1,63 +1,67 @@
-body{
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+header,
+main,
+footer {
+    padding: 0.5rem;
+    
+}
+.cir {
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+}
+header {
+    background-color: #ccc;
+    text-align: right;
+}
+main {
+    background-color: #fff;
+}
+footer {
+    background-color: #ccc;
+}
+section {
+    padding: 0.5rem;
     color: #000;
-    background-image: url("Img/1.jpg");
-    background-repeat: no-repeat;
-    background-size:cover;
-    animation: slide 30s infinite;
+    font-size: 1rem;
 }
-@keyframes slide{
-    25%{
-        background-image: url("img/2.jpeg");
-    }
-    50%{
-        background-image: url("img/3.jpg");
-    }
-    75%{
-        background-image: url("img/4.jpg");
-    }
-    100%{
-        background-image: url("img/1.jpg");
-    }
+.banner {
+    background-color: red;
 
+    
 }
-h1,h2{
+.banner h1 {
+    color: royalblue;
+    font-weight: bold;
+    text-transform: uppercase;
     text-align: center;
-    color: rgb(255, 255, 255);
-    font-size: 300%;
 }
-h2{
-    color: #0000ff;
+.grid-container {
+    display: grid;
+    grid-template-rows: 60px 200px 1fr 40px;
+    min-height: 100vh;
 }
-a:hover {
-    color: #fff;
+.img {
+    max-width: 100%;
 }
-a:active {
-    color: #ffff00;
+@media only screen and (min-width: 768px) {
+    .img {
+        max-width: 50%;
+        float: left;
+        margin-right: 1rem;
+    }
 }
-a:link {
-    background-color: #000; 
+@media only screen and (min-width: 991px) {
+    .grid-container {
+        grid-template-rows: 120px 200px 1fr 40px;
+    }
+    header button {
+        display: none;
+    }
 }
-a:visited {
-    color: #ff0000;
-}
-.img-pizza{
-    width: 160px;
-}
-/* descendant selector */
-article div {
-    color: red;
-}
- /* child selector */
-article > div {
-    color: yellow;
-}
-/* adjacent sibling selector */
-section + div {
-    text-align: center;
-    font: bold 30px helvetica;
-    text-shadow: 5px 5px 10px orange,
-                 10px 10px 20px blue;
-                   
-}
-
 
